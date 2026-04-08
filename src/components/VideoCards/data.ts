@@ -1,34 +1,47 @@
-import image1 from '../assets/images/geforce-rtx-3080.png';
-import image2 from '../assets/images/amd-radeon-rx-6800-xt.jpg';
-import image3 from '../assets/images/nvidia-geforce-gtx-1660-ti.jpg';
-import image4 from '../assets/images/amd-radeon-rx-5600-xt.jpg';
-import image5 from '../assets/images/nvidia-cmp-30hx.png';
-import image6 from '../assets/images/amd-radeon-rx-5700-xt.jpg';
-import image7 from '../assets/images/nvidia-quadro-rtx-6000.jpg';
-import image8 from '../assets/images/amd-radeon-pro-wx-9100.png';
-import image9 from '../assets/images/nvidia-quadro-p2000.jpg';
-import image10 from '../assets/images/amd-radeon-pro-wx-7100.jpg';
-import image11 from '../assets/images/nvidia-tesla-v100.jpg';
-import image12 from '../assets/images/amd-radeon-instinct-mi100.jpeg';
-import image13 from '../assets/images/nvidia-a100-tensor-core-gpu.jpg';
-import image14 from '../assets/images/amd-radeon-pro-VII.jpg';
-import image15 from '../assets/images/nvidia-tesla-t4.jpg';
-import image16 from '../assets/images/amd-radeon-pro-v340.jpg';
-import image17 from '../assets/images/nvidia-rtx-a6000.jpg';
-import image18 from '../assets/images/amd-radeon-instinct-mi25.jpg';
-import image19 from '../assets/images/nvidia-jetson-nano.jpg';
-import image20 from '../assets/images/amd-ryzen-embedded-v1000-series.jpg';
-import image21 from '../assets/images/intel-iris-xe-graphics.webp';
-import image22 from '../assets/images/qualcomm-adreno-650.png';
-import image23 from '../assets/images/apple-a14-bionic-gpu.jpg';
-import image24 from '../assets/images/arm-mali-g78-mp14.png';
-import image25 from '../assets/images/nvidia-quadro-rtx-4000.jpg';
-import image26 from '../assets/images/amd-radeon-pro-wx5100.jpg';
-import image27 from '../assets/images/nvidia-quadro-p5000.jpg';
-import image28 from '../assets/images/amd-radeon-pro-wx3200.jpeg';
-import image29 from '../assets/images/nvidia-rtx-3090.png';
+import image1 from '../../assets/images/geforce-rtx-3080.png';
+import image2 from '../../assets/images/amd-radeon-rx-6800-xt.jpg';
+import image3 from '../../assets/images/nvidia-geforce-gtx-1660-ti.jpg';
+import image4 from '../../assets/images/amd-radeon-rx-5600-xt.jpg';
+import image5 from '../../assets/images/nvidia-cmp-30hx.png';
+import image6 from '../../assets/images/amd-radeon-rx-5700-xt.jpg';
+import image7 from '../../assets/images/nvidia-quadro-rtx-6000.jpg';
+import image8 from '../../assets/images/amd-radeon-pro-wx-9100.png';
+import image9 from '../../assets/images/nvidia-quadro-p2000.jpg';
+import image10 from '../../assets/images/amd-radeon-pro-wx-7100.jpg';
+import image11 from '../../assets/images/nvidia-tesla-v100.jpg';
+import image12 from '../../assets/images/amd-radeon-instinct-mi100.jpeg';
+import image13 from '../../assets/images/nvidia-a100-tensor-core-gpu.jpg';
+import image14 from '../../assets/images/amd-radeon-pro-VII.jpg';
+import image15 from '../../assets/images/nvidia-tesla-t4.jpg';
+import image16 from '../../assets/images/amd-radeon-pro-v340.jpg';
+import image17 from '../../assets/images/nvidia-rtx-a6000.jpg';
+import image18 from '../../assets/images/amd-radeon-instinct-mi25.jpg';
+import image19 from '../../assets/images/nvidia-jetson-nano.jpg';
+import image20 from '../../assets/images/amd-ryzen-embedded-v1000-series.jpg';
+import image21 from '../../assets/images/intel-iris-xe-graphics.webp';
+import image22 from '../../assets/images/qualcomm-adreno-650.png';
+import image23 from '../../assets/images/apple-a14-bionic-gpu.jpg';
+import image24 from '../../assets/images/arm-mali-g78-mp14.png';
+import image25 from '../../assets/images/nvidia-quadro-rtx-4000.jpg';
+import image26 from '../../assets/images/amd-radeon-pro-wx5100.jpg';
+import image27 from '../../assets/images/nvidia-quadro-p5000.jpg';
+import image28 from '../../assets/images/amd-radeon-pro-wx3200.jpeg';
+import image29 from '../../assets/images/nvidia-rtx-3090.png';
 
-export const videoCardsData = [
+export interface VideoCard {
+  id: number;
+  title: string;
+  price: string;
+  content: string;
+  img: string;
+  manufacturer: string;
+  memorySize: string;
+  gpuFrequency: string;
+  busWidth: string;
+  category: string;
+}
+
+export const videoCardsData: VideoCard[] = [
   {
     id: 1,
     title: 'NVIDIA GeForce RTX 3080',
