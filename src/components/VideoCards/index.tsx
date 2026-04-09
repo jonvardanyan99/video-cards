@@ -336,7 +336,7 @@ export const VideoCards: React.FC = () => {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(auto, 345px))',
               justifyContent: 'center',
-              gap: '20px',
+              gap: '24px',
               borderRadius: '20px',
               marginTop: '35px',
               padding: '50px 20px',
