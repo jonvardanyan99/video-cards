@@ -2,7 +2,7 @@ import image1 from '../../assets/images/geforce-rtx-3080.png';
 import image2 from '../../assets/images/amd-radeon-rx-6800-xt.jpg';
 import image3 from '../../assets/images/nvidia-geforce-gtx-1660-ti.jpg';
 import image4 from '../../assets/images/amd-radeon-rx-5600-xt.jpg';
-import image5 from '../../assets/images/nvidia-cmp-30hx.png';
+import image5 from '../../assets/images/nvidia-cmp-30hx.jpg';
 import image6 from '../../assets/images/amd-radeon-rx-5700-xt.jpg';
 import image7 from '../../assets/images/nvidia-quadro-rtx-6000.jpg';
 import image8 from '../../assets/images/amd-radeon-pro-wx-9100.png';

@@ -129,7 +129,7 @@ export const VideoCards: React.FC = () => {
       <Box
         sx={{
           boxSizing: 'border-box',
-          width: '1000px',
+          maxWidth: '1000px',
           textAlign: 'center',
           padding: '20px',
           [theme.breakpoints.down('sm')]: {
@@ -333,15 +333,15 @@ export const VideoCards: React.FC = () => {
         {videoCards.length > 0 && (
           <Card
             sx={{
-              display: 'flex',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(auto, 345px))',
               justifyContent: 'center',
               gap: '20px',
-              flexWrap: 'wrap',
               borderRadius: '20px',
               marginTop: '35px',
               padding: '50px 20px',
               [theme.breakpoints.down('sm')]: {
-                padding: '25px 15px',
+                padding: '35px 15px',
               },
             }}
           >
@@ -349,7 +349,6 @@ export const VideoCards: React.FC = () => {
               <CardActionArea
                 key={card.id}
                 sx={{
-                  maxWidth: '345px',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'flex-start',
@@ -363,9 +362,7 @@ export const VideoCards: React.FC = () => {
                   image={card.img}
                   alt={card.title}
                   sx={{
-                    [theme.breakpoints.down('sm')]: {
-                      objectFit: 'contain',
-                    },
+                    objectFit: 'contain',
                   }}
                 />
                 <CardContent
